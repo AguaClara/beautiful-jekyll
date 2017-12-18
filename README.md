@@ -1,24 +1,19 @@
-# Beautiful Jekyll
+# JARR: Another Research Repo
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/daattali/20)
-[![Gem Version](https://badge.fury.io/rb/beautiful-jekyll-theme.svg)](https://badge.fury.io/rb/beautiful-jekyll-theme)
+This is a Jekyll website that is designed for research. We use it and maintain it at the AguaClara Research Lab at Cornell University to store our finished research reports.
 
-> *Copyright 2016 [Dean Attali](http://deanattali.com)*
+Feel free to fork it, and we'll add you to the list of forked projects.
 
-**Beautiful Jekyll** is a ready-to-use template to help you create an awesome website quickly. Perfect for personal blogs or simple project websites.  [Check out a demo](http://deanattali.com/beautiful-jekyll) of what you'll get after just two minutes.  You can also look at [my personal website](http://deanattali.com) to see it in use, or see examples of websites other people created using this theme [here](#showcased-users-success-stories).
+## Supporting
 
-**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/daattali/20) for developing and maintaining this template.**
+To support this project, you can donate to the AguaClara program through this [Cornell University donation link](https://securelb.imodules.com/s/1717/alumni/index.aspx?sid=1717&gid=2&pgid=403&cid=1031&dids=232&bledit=1).
 
-<p align="center">
-  <a href="https://www.paypal.me/daattali">
-    <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" />
-  </a>
-</p>
+As of right now, this is mainly a fork of beautiful jekyll, a theme/template maintained by [Dean Attali](http://deanattali.com).
 
 ### Table of contents
 
 - [Prerequisites](#prerequisites)
-- [Build your website in 3 steps](#build-your-website-in-3-steps)
+- [Build your website in 4 steps](#build-your-website-in-4-steps)
 - [Add your own content](#add-your-own-content)
 - [Last important thing: YAML front matter ("parameters" for a page)](#last-important-thing-yaml-front-matter-parameters-for-a-page)
 - [Features](#features)
@@ -33,12 +28,14 @@
 - You need to have a GitHub account. If you don't have one, [sign up here](https://github.com/join) - it takes one minute. This is where your website will live - if you sign up with username `johnsmith` then your website will be `http://johnsmith.github.io`.  
 - It would be helpful to understand what Markdown is and how to write it. Markdown is just a way to take a piece of text and format it to look a little nicer.  For example, this whole instruction set that you're reading is written in markdown - it's just text with some words being bold/larger/italicized/etc. I recommend taking 5 minutes to learn markdown [with this amazingly easy yet useful tutorial](http://markdowntutorial.com/).
 
-## Build your website in 3 steps
+## Build your website in 4 steps
 
-Getting started is *literally* as easy as 1-2-3 :smile:   
+Getting started is *literally* as easy as 1-2-3... &4 :smile:   
 Scroll down to see the steps involved, but here is a 40-second video just as a reference as you work through the steps.
 
 ![Installation steps](img/install-steps.gif)
+
+**Note:** this video does not include steps for running locally to include plugins.
 
 ### 1. Fork this repository
 
@@ -46,7 +43,7 @@ Scroll down to see the steps involved, but here is a 40-second video just as a r
 
 ### 2. Rename the repository to `<yourusername>.github.io`
 
-This will create a GitHub User page ready with the **Beautiful Jekyll** template that will be available at `http://<yourusername>.github.io` within a couple minutes.  To do this, click on *Settings* at the top (the cog icon) and there you'll have an option to rename.
+This will create a GitHub User page ready with the **JARR** template that will be available at `http://<yourusername>.github.io` within a couple minutes.  To do this, click on *Settings* at the top (the cog icon) and there you'll have an option to rename.
 
 ### 3. Customize your website settings
 
@@ -59,6 +56,10 @@ After you save your changes to the config file (by clicking on *Commit changes* 
 You can now visit your shiny new website, which will be seeded with several sample blog posts and a couple other pages. Your website is at `http://<yourusername>.github.io` (replace `<yourusername>` with your user name). Do not add `www` to the URL - it will not work!
 
 **Note:** The video above goes through the setup for a user with username `daattalitest`. I only edited one setting in the `_config.yml` file in the video, but **you should actually go through the rest of the settings as well. Don't be lazy, go through all the settings :)**
+
+### 4. Run Plugins Locally
+
+To unlock all of the features of JARR, you'll need to generate your site locally using Jekyll. Unfortunately, for security reasons, GitHub-pages doesn't support running the plugins we use to generate JARR. The way around this is to build locally or with a Continuous Integration tool and then publish the built site. To run Jekyll locally, install Jekyll, run a `bundle install` to install the required gems, then run `jekyll serve` to build the site to the \_site directory and serve it at `localhost:4000`. Now you should be able to push the \_site directory to its own repo and GitHub-pages should serve the site.  
 
 ## Add your own content
 
@@ -129,7 +130,7 @@ Beautiful Jekyll automatically generates a simple RSS feed of your blog posts, t
 
 ### YAML front matter parameters
 
-These are the main parameters you can place inside a page's YAML front matter that **Beautiful Jekyll** supports.
+These are the main parameters you can place inside a page's YAML front matter that **JARR** supports.
 
 Parameter   | Description
 ----------- | -----------
@@ -146,14 +147,14 @@ layout      | What type of page this is (default is `blog` for blog posts and `p
 js          | List of local JavaScript files to include in the page (eg. `/js/mypage.js`)
 ext-js      | List of external JavaScript files to include in the page (eg. `//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js`). External JavaScript files that support [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) can be specified using the `href` and `sri` parameters eg.<br/>`href: "//code.jquery.com/jquery-3.1.1.min.js"`<br/>`sri: "sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="`
 css         | List of local CSS files to include in the page
-ext-css      | List of external CSS files to include in the page. External CSS files using SRI (see `ext-js` parameter) are also supported. 
+ext-css      | List of external CSS files to include in the page. External CSS files using SRI (see `ext-js` parameter) are also supported.
 googlefonts | List of Google fonts to include in the page (eg. `["Monoton", "Lobster"]`)
-gh-repo   | If you want to show GitHub buttons at the top of a post, this sets the GitHub repo name (eg. `daattali/beautiful-jekyll`). You must also use the `gh-badge` parameter to specify what buttons to show.
+gh-repo   | If you want to show GitHub buttons at the top of a post, this sets the GitHub repo name (eg. `daattali/JARR`). You must also use the `gh-badge` parameter to specify what buttons to show.
 gh-badge  | Select which GitHub buttons to display, available options are: [star, watch, fork, follow]. You must also use the `gh-repo` parameter to specify the GitHub repo.
 
 ### Advanced features (including how to use a custom URL address for your site)
 
-I wrote [a blog post](http://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that are applicable to any Jekyll site.  It describes how I used a custom URL for my site (deanattali.com instead of daattali.github.io), how to add a Google-powered search into your site, and provides a few more details about having an RSS feed.
+I wrote [a blog post](http://deanattali.com/2015/03/12/JARR-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that are applicable to any Jekyll site.  It describes how I used a custom URL for my site (deanattali.com instead of daattali.github.io), how to add a Google-powered search into your site, and provides a few more details about having an RSS feed.
 
 ## Creating a User Page vs a Project Page
 
@@ -217,13 +218,7 @@ Beautiful Jekyll is meant to be so simple to use that you can do it all within t
     Note you may need to add `--host 0.0.0.0` after `bundle exec jekyll serve` to get the site to server correctly.
 4. View your website at <http://localhost:4000>.
 
-Disclaimer: I personally am NOT using local development so I don't know much about running Jekyll locally. If you follow this route, please don't ask me questions because unfortunately I honestly won't be able to help!		
-  		  
-Aditionally, if you choose to deploy Jekyll using a local ruby installation, you can tell Jekyll to automatically categorize your blog posts by tags. You just need to set `link-tags: true` in `_config.yml`. Jekyll will then generate a new page for each unique tag which lists all of the posts that belong to that tag.
-
 ## FAQ
-
-Beautiful Jekyll is actively used by thousands of people with wildly varying degrees of competency, so it's impossible to answer all the questions that may arise. Below are answers to a few very common questions. Most questions that I get asked are not directly related to this theme, and instead are more general questions about Jekyll or web development. Many such questions can be answered by reading the [Jekyll documentation](http://jekyllrb.com/) or simply by Googling.
 
 #### How do I change the number of posts per page OR the colour of the navigation bar OR the image in the navigation bar OR ...?
 
@@ -243,19 +238,13 @@ Unfortunately, this is a no-answer! There isn't a one-size-fits-all solution to 
 
 ## Credits
 
-This template was not made entirely from scratch. I would like to give special thanks to:
-- [Barry Clark](https://github.com/barryclark) and his project [Jekyll Now](https://github.com/barryclark/jekyll-now), from whom I've taken several ideas and code snippets, as well as some documenation tips.
-- [Iron Summit Media](https://github.com/IronSummitMedia) and their project [Bootstrap Clean Blog](https://github.com/IronSummitMedia/startbootstrap-clean-blog), from which I've used some design ideas and some of the templating code for posts and pagination.
+This template borrows HEAVILY from the Beautiful Jekyll template. Thank you for getting us going, Beautiful Jekyll!
 
-I'd also like to thank [Dr. Jekyll's Themes](http://drjekyllthemes.github.io/), [Jekyll Themes](http://jekyllthemes.org/), and another [Jekyll Themes](http://jekyllrc.github.io/jekyllthemes/) for featuring Beautiful Jekyll in their Jekyll theme directories.
+The beauty of open source is that this site is built on the backs of a huge community. I couldn't possibly thank everyone, so please just be greatful for everyone's existence - they may have helped build your site :smile . 
 
 ## Contributions
 
 If you find anything wrong or would like to contribute in any way, feel free to create a pull request/open an issue/send me a message.  Any comments are welcome!
-
-Thank you to [all contributors](https://github.com/daattali/beautiful-jekyll/graphs/contributors). Special thanks to the following people with non-trivial contributions (in chronological order): [@hristoyankov](https://github.com/hristoyankov), [@jamesonzimmer](https://github.com/jamesonzimmer), [@XNerv](https://github.com/XNerv), [@epwalsh](https://github.com/epwalsh), [@rtlee9](https://github.com/rtlee9), [@OCram85](https://github.com/OCram85).
-
-If you do fork or clone this project to use as a template for your site, I would appreciate if you keep the link in the footer to this project.  I've noticed that several people who forked this repo removed the attribution and I would prefer to get the recognition if you do use this :)
 
 ## Known limitations
 
