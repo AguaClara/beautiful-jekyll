@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Your Title - feminism</title>
+ <link href="http://example.com/tag/feminism/index.xml" rel="self"/>
+ <link href="http://example.com/tag/feminism.html"/>
+ <updated>2017-12-18T12:19:40-08:00</updated>
+ <id>http://example.com/tag/feminism.html</id>
+ <author>
+   <name>Author Here</name>
+ </author>
+ 
+ <entry>
+   <title>Pirates arrrr</title>
+   <link href="http://example.com/2015-01-15-pirates/"/>
+   <updated>2015-01-15T00:00:00-08:00</updated>
+   <id>http://example.com/pirates</id>
+   <content type="html">&lt;p&gt;Piracy is typically an act of robbery or criminal violence at sea. The term can include acts committed on land, in the air, or in other major bodies of water or on a shore. It does not normally include crimes committed against persons traveling on the same vessel as the perpetrator (e.g. one passenger stealing from others on the same vessel). The term has been used throughout history to refer to raids across land borders by non-state agents.&lt;/p&gt;
+</content>
+ </entry>
+ 
+</feed>

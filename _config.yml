@@ -19,6 +19,10 @@ title: My website
 # Short description of your site
 description: A virtual proof that name is awesome!
 
+# --- Publishing Options --- #
+# By default build to the /docs directory and host the /docs directory on gh-pages to avoid plugin limitations.
+destination: docs
+
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar

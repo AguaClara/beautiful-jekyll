@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Your Title - random</title>
+ <link href="http://example.com/tag/random/index.xml" rel="self"/>
+ <link href="http://example.com/tag/random.html"/>
+ <updated>2017-12-18T12:19:40-08:00</updated>
+ <id>http://example.com/tag/random.html</id>
+ <author>
+   <name>Author Here</name>
+ </author>
+ 
+ <entry>
+   <title>Dear diary</title>
+   <link href="http://example.com/2015-01-27-dear-diary/"/>
+   <updated>2015-01-27T00:00:00-08:00</updated>
+   <id>http://example.com/dear-diary</id>
+   <content type="html">&lt;p&gt;What is it with that Mary girl?  Dragging me to school every day. As if I had a choice.  What you don’t hear in those nursery rhymes is that she starves me if I don’t go to school with her; it’s the only way I can stay alive!  I’m thinking about being adopted by Little Bo Peep, sure I may get lost, but anything is better than being with Mary and those little brats at school (shudder, shudder).&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>First post!</title>
+   <link href="http://example.com/2015-01-04-first-post/"/>
+   <updated>2015-01-04T00:00:00-08:00</updated>
+   <id>http://example.com/first-post</id>
+   <content type="html">&lt;p&gt;This is my first post, how exciting!&lt;/p&gt;
+</content>
+ </entry>
+ 
+</feed>
