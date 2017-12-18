@@ -226,6 +226,7 @@ plugins:
   - jekyll-paginate
 
 # --- Plugin Specific Info --- #
+
 # jekyll-tagging
 tag_page_layout: tag_page
 tag_page_dir: tag
@@ -233,6 +234,10 @@ tag_feed_layout: tag_feed
 tag_feed_dir: tag
 ignored_tags: [tags,to,ignore]
 tag_permalink_style: pretty
+
+# jekyll-scholar
+scholar:
+  style: mla
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
